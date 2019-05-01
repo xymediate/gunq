@@ -1,6 +1,6 @@
 const chars = 'ABCDEFGHIJKLMNPQRSTUVWXYZ123456789';
-let maxLength = chars.length - 1;
-const keyPrefixLength = 12;   
+const maxLength = chars.length - 1;
+import * as config from '../gunqify.json';
 
 function randomIntFromInterval(min: number,max: number)
 {
@@ -9,11 +9,8 @@ function randomIntFromInterval(min: number,max: number)
 
 export const Gunqify = () => {
     let result = '';
-    for (var i = 1; i <= keyPrefixLength; i++) {
+    for (let i = 1; i <= config.keyLength; i++) {
         result += chars[randomIntFromInterval(0, maxLength)];
     };  
     return result;
 };
-
-//export const Gunqify = () => "xyz";
-//export const Identify = (name: string) => `Hello ${name}`; 
