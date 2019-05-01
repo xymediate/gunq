@@ -1,3 +1,4 @@
 {
-    "keyLength": 20
+    "keyLength": 20,
+    "keyChars": "ABCDEFGHIJKLMNPQRSTUVWXYZ123456789"
 }
